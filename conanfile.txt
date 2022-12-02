@@ -1,0 +1,10 @@
+[requires]
+fmt/9.1.0
+glog/0.6.0
+
+[generators]
+cmake
+CMakeDeps
+CMakeToolchain
+
+[options]
