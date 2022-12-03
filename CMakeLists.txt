@@ -4,6 +4,6 @@ message("==================================================================")
 message("C Standard: C17")
 set(CMAKE_C_STANDARD 17)
 
-set(SRC src/tool/logger.c src/tool/logger.h src/tool/result.c src/tool/result.h src/main.c )
+set(SRC src/tool/logger.c src/tool/logger.h src/tool/result.c src/tool/result.h src/main.c)
 
 add_executable(${PROJECT_NAME} ${SRC})
