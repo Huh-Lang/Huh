@@ -1,13 +1,9 @@
 cmake_minimum_required(VERSION 3.24)
 project(Huh C)
+message("==================================================================")
+message("C Standard: C17")
 set(CMAKE_C_STANDARD 17)
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-conan_basic_setup()
 
-find_package(glog)
-find_package(fmt)
+set(SRC src/tool/logger.c src/tool/logger.h src/tool/result.c src/tool/result.h src/main.c )
 
-add_executable(Huh src/main.c)
-
-# Use the global target
-target_link_libraries(${PROJECT_NAME} glog::glog)
+add_executable(${PROJECT_NAME} ${SRC})
