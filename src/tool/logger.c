@@ -37,7 +37,7 @@ void error(char *event,char *msg){
 	char *time = asctime(gmtime(&t));
 	logger(tmp,time);
 
-	EXIT_FAILURE;
+	exit(EXIT_FAILURE);
 }
 
 void free_log_data(){
