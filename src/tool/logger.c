@@ -13,13 +13,13 @@ void logger(log *send_log,char *time){
 }
 
 void debug(char *event,char *msg){
-	log *tmp = {event,Debug,*msg};
+	log *tmp = {event,Debug,msg};
 	time_t t = time(NULL);
 	char *time = asctime(gmtime(&t));
 	logger(tmp,time);
 }
 void info(char *event,char *msg){
-	log *tmp = {event,Info,*msg};
+	log *tmp = {event,Info,msg};
 	time_t t = time(NULL);
 	char *time = asctime(gmtime(&t));
 	logger(tmp,time);
