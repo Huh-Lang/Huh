@@ -18,4 +18,5 @@ void CliInit()
 {
     puts(getVersion); // getVersio is define
     puts(COMP);
+    puts(">");
 }

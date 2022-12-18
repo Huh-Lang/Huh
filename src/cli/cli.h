@@ -19,3 +19,4 @@ char* getValue();
 // if cli ended
 // return 0
 int runCli();
+void CliInit(); 
