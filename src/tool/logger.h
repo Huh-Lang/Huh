@@ -13,8 +13,11 @@
 
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
-typedef enum Level{
+#define usize unsigned long long 
+
+enum Level{
     Debug,
     Info,
     Warn,
@@ -28,15 +31,17 @@ typedef struct Log{
 }log;
 
 log *log_data;
-u_int *log_data_target_ptr = 0;
+usize *log_data_target_ptr = 0;
 
-void logger(log *send_log,time_t timer);
+void logger(log *send_log,char *time);
 
-void debug(char *event,char *msg,...);
-void info(char *event,char *msg,...);
-void warn(char *event,char *msg,...);
-void error(char *event,char *msg,...);
+void debug(char *event,char *msg);
+void info(char *event,char *msg);
+void warn(char *event,char *msg);
+void error(char *event,char *msg);
 
 void free_log_date();
+
+void print_log();
 
 #endif
