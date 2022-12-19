@@ -5,7 +5,7 @@
 /// return(Opition(true,number,value,...)); OR return(Opition(false));
 /// boolean_optition: 返回运行结果，成功true；失败false
 /// number: 返回值数量
-/// ...(value)： 返回值，但不能是数组或字符串
+/// ...(value)： 返回值
 ///
 /// ex:
 /// Result a(){
