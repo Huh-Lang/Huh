@@ -25,13 +25,10 @@ enum Level{
 };
 
 typedef struct Log{
-    char *event;
+    char* event;
     enum Level level;
-    char *msg;
+    char* msg;
 }log;
-
-log *log_data;
-usize *log_data_target_ptr = 0;
 
 void logger(log *send_log,char *time);
 
