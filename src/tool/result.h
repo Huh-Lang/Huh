@@ -18,10 +18,10 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <stddef.h>
-#include "logger.h"
 
 #define Result void*
 
+#define usize unsigned long long
 #define bool _Bool
 #define true 1
 #define false 0

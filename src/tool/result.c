@@ -9,6 +9,9 @@ void* Opition(bool boolean_optition, usize number,...){
     if (boolean_optition == false){
         return false;
     }
+    if (number == 0){
+        return 0;
+    }
     void* *tmp;
     tmp = (void *)malloc(0);
     for (usize i = 0; i <= number; i++)
@@ -18,5 +21,6 @@ void* Opition(bool boolean_optition, usize number,...){
 		tmp[i] = value_list_tmp;
         free(value_list_tmp);
     }
+    va_end(value_list);
     return tmp;
 }
