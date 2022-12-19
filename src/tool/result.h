@@ -26,7 +26,6 @@
 #define true 1
 #define false 0
 
-///禁止传入数组或字符串
 void* Opition(bool boolean_optition, usize number,...);
 
 #endif
