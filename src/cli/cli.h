@@ -1,7 +1,9 @@
+#ifndef __CLI_H__
+#define __CLI_H__
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 
 #define CliEND 0
 
@@ -20,3 +22,5 @@ char* getValue();
 // return 0
 int runCli();
 void CliInit(); 
+
+#endif
