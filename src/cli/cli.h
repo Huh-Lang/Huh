@@ -23,4 +23,6 @@ char* getValue();
 int runCli();
 void CliInit(); 
 
+void CliHelp();
+
 #endif

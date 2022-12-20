@@ -3,8 +3,12 @@
 #include "cli/cli.h"
 #include "tool/result.h"
 
-Result main(int argc, char **argv) {
-  if (argc == 1)
+int main(int argc, char **argv) {
+  if (argc == 1){
     CliInit();
-  return (Opition(true, 0));
+	if (**argv != '\0') {
+		CliHelp();
+	}
+  }
+  return (0);
 }

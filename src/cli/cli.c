@@ -1,6 +1,6 @@
 #include "cli.h"
 
-#define Version "0.0.0.1 Dev"
+#define Version "0.0.1 Dev"
 #define getVersion Version" (R) Huh Devlopment"
 
 #if __GNUC__
@@ -16,7 +16,12 @@
 
 void CliInit()
 {
-    puts(getVersion); // getVersio is define
+    puts(getVersion); // getVersion is defined
     puts(COMP);
-    puts(">");
+}
+
+const char HELPS[] ="-H --help\n-O\n-V --version\n";
+
+void CliHelp(){
+	puts(HELPS);
 }
