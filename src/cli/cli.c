@@ -12,7 +12,7 @@
 #else
 #define COM "[UNKNOW COMPILER]"
 #endif
-#define COMP COM" [LICENSE GPL] [TYPE help() GET HELP INFO]"
+#define COMP COM" [LICENSE GPL]"
 
 void CliInit()
 {

@@ -12,8 +12,8 @@
 /// return(Opition(true,number,value,...)); OR return(Opition(false));
 /// }
 ///===========================================================
-#ifndef __RESULT_H__
-#define __RESULT_H__
+#ifndef _RESULT_H
+#define _RESULT_H
 
 #include <stdlib.h>
 #include <stdarg.h>

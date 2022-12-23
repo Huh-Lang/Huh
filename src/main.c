@@ -5,10 +5,10 @@
 
 int main(int argc, char **argv) {
   if (argc == 1){
-    CliInit();
-	if (**argv != '\0') {
-		CliHelp();
-	}
+      CliInit();
+      CliHelp();
+  } else if (argc > 1){
+      CliInit();
   }
   return (0);
 }

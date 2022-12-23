@@ -1,5 +1,5 @@
-#ifndef __CLI_H__
-#define __CLI_H__
+#ifndef _CLI_H
+#define _CLI_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,11 +17,7 @@
 // Get user input
 char* getValue();
 
-// Run cli
-// if cli ended
-// return 0
-int runCli();
-void CliInit(); 
+void CliInit();
 
 void CliHelp();
 
