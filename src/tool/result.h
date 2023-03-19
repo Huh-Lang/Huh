@@ -2,18 +2,17 @@
 /// 定义result
 /// 函数通过返回result类型数据，丰富异常处理方式
 ///
-/// return(Opition(true,number,value,...)); OR return(Opition(false));
+/// return(Opition(true,number,value,...)); OR return(Opition(false,number,value));
 /// boolean_optition: 返回运行结果，成功true；失败false
 /// number: 返回值数量
 /// ...(value)： 返回值
 ///
 /// ex:
 /// Result a(){
-/// return(Opition(true,number,value,...)); OR return(Opition(false));
+/// return(Opition(true,number,value,...)); OR return(Opition(false,number,value));
 /// }
 ///===========================================================
-#ifndef _RESULT_H
-#define _RESULT_H
+#pragma once
 
 #include <stdlib.h>
 #include <stdarg.h>
@@ -26,6 +25,4 @@
 #define true 1
 #define false 0
 
-void* Opition(bool boolean_optition, usize number,...);
-
-#endif
+void* Opition(bool boolean_optition, usize number, ...);

@@ -7,8 +7,8 @@
 #define COM "[GNU GCC]"
 #elif __clang__
 #define COM "[LLVM CLANG]"
-#elif _MSC_BUILD
-#define COM "[MSFT MSVC]"
+#elif _MSC_VER
+#define COM "[MicroSoft MSVC]"
 #else
 #define COM "[UNKNOW COMPILER]"
 #endif
@@ -20,7 +20,7 @@ void CliInit()
     puts(COMP);
 }
 
-const char HELPS[] ="-H --help\n-O\n-V --version\n";
+const char HELPS[] ="-H --help\n-O -o\n-V --version\n";
 
 void CliHelp(){
 	puts(HELPS);

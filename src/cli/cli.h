@@ -1,5 +1,4 @@
-#ifndef _CLI_H
-#define _CLI_H
+#pragma once
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,7 +9,7 @@
 /*
  * Cli actions
  *
- * */
+ */
 
 
 
@@ -20,5 +19,3 @@ char* getValue();
 void CliInit();
 
 void CliHelp();
-
-#endif

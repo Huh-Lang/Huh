@@ -6,9 +6,6 @@
 void* Opition(bool boolean_optition, usize number,...){
     va_list value_list;
     va_start(value_list, number);
-    if (boolean_optition == false){
-        return false;
-    }
     if (number == 0){
         return 0;
     }
